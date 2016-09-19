@@ -1,0 +1,83 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">x86</Platform>
+    <ProductVersion>8.0.30703</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5EC64A36-8A6E-44A9-BF01-BDE4F7175A86}</ProjectGuid>
+    <OutputType>Exe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Register_Cmdtx</RootNamespace>
+    <AssemblyName>Register-Cmdtx</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <TargetFrameworkProfile>Client</TargetFrameworkProfile>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|x86' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdminUI.DcmObjectWrapper">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\AdminUI.DcmObjectWrapper.dll</HintPath>
+    </Reference>
+    <Reference Include="AdminUI.WqlQueryEngine">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\AdminUI.WqlQueryEngine.dll</HintPath>
+    </Reference>
+    <Reference Include="dcmobjectmodel">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\dcmobjectmodel.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ConfigurationManagement.ApplicationManagement">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\Microsoft.ConfigurationManagement.ApplicationManagement.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ConfigurationManagement.ApplicationManagement.Extender">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\Microsoft.ConfigurationManagement.ApplicationManagement.Extender.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.ConfigurationManagement.ManagementProvider">
+      <HintPath>..\..\..\..\..\..\..\Microsoft System Center Configuration Manager 2012 SDK Beta\Code Sample\External\bin\sms\Managed\Microsoft.ConfigurationManagement.ManagementProvider.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
